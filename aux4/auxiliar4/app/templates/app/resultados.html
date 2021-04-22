@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <div class="container">
+    	<h1>Resultados del formulario</h1>
+    	<h3>Nombre: {{nombre}}</h3>
+		<h3>Apellido: {{apellido}}</h3>
+    	<h3>Edad: {{number}}</h3>
+    	<h3>Email: {{email}}</h3>
+    	<h3>Dieta preferida: {{radios}}</h3>
+    	<h3>Vivienda preferida: {{select}}</h3>
+    	{% for campo in checkbox %}
+    	<h3>Mascota preferida: {{campo}}</h3>
+    	{% endfor %}
+    </div>
+</body>
+</html>
